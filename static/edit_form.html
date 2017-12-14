@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Сервіс Обліку Студентів</title>
+    <meta name="description" content="Система Обліку Студентів Навчального Закладу" />
+
+    <!-- Include Styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Start Container -->
+    <div class="container">
+        <!-- Start Header -->
+        <div class="row" id="header">
+            <!-- Logo -->
+            <div class="col-xs-8">
+                <h1>Edit form for students</h1>
+            </div>
+        </div>
+
+
+
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Ім'я*</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" value="Yevhenii">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label">По-батькові</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" value="Petrovich">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Прізвище*</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" value="Andrieiev">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label">№ Білету*</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" value="2123">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Дата народження</label>
+                <div class="col-xs-3">
+                    <input type="text" class="form-control" value="09/03/1993">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Фото</label>
+                <div class="col-xs-3">
+                    Наразі:
+                    <a href="./img/img1.jpg">img</a>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">Очистити</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10">
+                    <input id="upload_photo" class="input_text" type="file" title="Формат: JPEG, PNG, GIF" size="20" value="" name="upload_photo">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Група</label>
+                <div class="col-xs-3">
+                    <select class="form-control">
+                        <option selected>МтМ-21</option>
+                        <option>МтМ-22</option>
+                        <option>МтМ-23</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label">Notes</label>
+                <div class="col-xs-3">
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-2 control-label"></label>
+                <div class="col-xs-3">
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+</body>
+
+</html>
