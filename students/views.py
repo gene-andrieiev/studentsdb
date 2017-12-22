@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -5,7 +7,24 @@ from django.http import HttpResponse
 
 
 def students_list(request):
-    return render(request, "students/students_list.html", {})
+    students = (
+        {'id': 1,
+         'first_name': u'Yevhenii',
+         'last_name': u'Andrieiev',
+         'ticket': 2123,
+         'image': 'img/img1.jpg'},
+        {'id': 2,
+         'first_name': u'Yevhenii',
+         'last_name': u'Andrieiev',
+         'ticket': 254,
+         'image': 'img/img2.jpg'},
+        {'id': 3,
+         'first_name': u'Yevhenii',
+         'last_name': u'Andrieiev',
+         'ticket': 5332,
+         'image': 'img/img3.jpg'},
+    )
+    return render(request, "students/students_list.html", {'students': students})
 
 
 def students_add(request):
