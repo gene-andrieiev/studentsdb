@@ -1,0 +1,200 @@
+{% extends 'students/base.html' %}
+
+{% load static from staticfiles %}
+
+{% block meta_title %}Journal{% endblock meta_title %}
+
+{% block title %}Attendance List{% endblock title %}
+
+{% block content %}
+
+                <!-- Navigation -->
+                <ul class="pager">
+                    <li>
+                        <a href="#">←</a>
+                    </li>
+                    <li>
+                        January
+                    </li>
+                    <li>
+                        <a href="#">→</a>
+                    </li>
+                </ul>
+
+                <!-- Start Attendance -->
+                <div class="scrollme">
+                    <table class="table table-striped table-hover table-bordered table-responsive">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Student</th>
+                                <th>Mon. 1</th>
+                                <th>Tue. 2</th>
+                                <th>Wed. 3</th>
+                                <th>Thu. 4</th>
+                                <th>Fri. 5</th>
+                                <th>Sat. 6</th>
+                                <th>Sun. 7</th>
+                                <th>Mon. 8</th>
+                                <th>Tue. 9</th>
+                                <th>Wed. 10</th>
+                                <th>Thu. 11</th>
+                                <th>Fri. 12</th>
+                                <th>Sat. 13</th>
+                                <th>Sun. 14</th>
+                                <th>Mon. 15</th>
+                                <th>Tue. 16</th>
+                                <th>Wed. 17</th>
+                                <th>Thu. 18</th>
+                                <th>Fri. 19</th>
+                                <th>Sat. 20</th>
+                                <th>Sun. 21</th>
+                                <th>Mon. 22</th>
+                                <th>Tue. 23</th>
+                                <th>Wed. 24</th>
+                                <th>Thu. 25</th>
+                                <th>Fri. 26</th>
+                                <th>Sat. 27</th>
+                                <th>Sun. 28</th>
+                                <th>Mon. 29</th>
+                                <th>Tue. 30</th>
+                                <th>Wed. 31</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in journal %}
+                            <tr>
+                                <td>{{ forloop.counter }}</td>
+                                <td>{{ item.name }}</td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                                <td>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"></label>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <!-- End Attendance -->
+
+{% endblock content %}
