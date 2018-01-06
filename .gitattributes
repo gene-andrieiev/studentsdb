@@ -1,2 +1,4 @@
 static/* linguist-vendored
 templates/* linguist-vendored
+students/static/* linguist-vendored
+students/static/templates/students/* linguist-vendored
