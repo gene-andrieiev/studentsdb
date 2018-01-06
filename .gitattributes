@@ -1,3 +1,4 @@
 static/* linguist-vendored
 templates/* linguist-vendored
-*.rb linguist-language=Python
+students/static/* linguist-vendored
+students/static/templates/students/* linguist-vendored
